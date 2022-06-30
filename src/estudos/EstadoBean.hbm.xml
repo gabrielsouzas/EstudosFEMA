@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="estudos">
+	<class name="EstadoBean" table="ESTADO">
+		<id name="id" column="ESTADO_CODIGO" type="integer">
+			<generator class="assigned">
+			</generator>
+		</id>
+		<property name="nome" column="ESTADO_NOME" type="string" />
+	</class>
+</hibernate-mapping>

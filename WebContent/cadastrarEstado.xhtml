@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Menu de estados</title>
+</head>
+<body>
+	<f:view>
+
+		<h:form>
+			<h:outputLabel value="Codigo"></h:outputLabel><h:inputText value="#{estadosMB.estadoBean.id}"></h:inputText>
+			<br/>
+			<br/>
+			<h:outputLabel value="Nome"></h:outputLabel><h:inputText value="#{estadosMB.estadoBean.nome}"></h:inputText>
+			<br/>
+			<br/>
+			<h:commandButton value="Cadastrar" action="#{estadosMB.cadastrarEstado}"></h:commandButton>
+		</h:form>
+		
+	</f:view>
+</body>
+</html>

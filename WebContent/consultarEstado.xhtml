@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>Cadastrar de estados</title>
+</head>
+<body>
+	<f:view>
+		<h:form>
+
+			<h:dataTable border="1" value="#{estadoMB.estador}" var="est">
+				<h:column id="column1">
+					<f:facet name="header">
+						<h:outputText value="Codigo"></h:outputText>
+					</f:facet>
+						<h:outputText value="#{est.id}"></h:outputText>
+				</h:column>
+				<h:column id="column2">
+					<f:facet name="header">
+						<h:outputText value="Nome"></h:outputText>
+					</f:facet>
+					<h:outputText value="#{est.nome}"></h:outputText>
+				</h:column>
+			</h:dataTable>
+		</h:form>
+	</f:view>
+</body>
+</html>
